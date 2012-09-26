@@ -45,7 +45,7 @@ Ensuring a container does not exist on any host:
 * *ensure:* can be 'absent', 'stopped' or 'running'. Defaults to 'running'.
 * *template:* the name of your template name.
 * *vgname:* the volume group to create your container in.
-* *host:* the host to create/destroy your container on. Defaults to all hosts.
+* *host:* the host to create/destroy your container on. Migration is not (yet?) supported. Defaults to all hosts.
 * *autostart:* Automatically start container at boot time. Defaults to true.
 * *lvsize:* The logical volume size in GB. Resizing is not supported (yet?). Defaults to 5.
 * *filesystem:* The filesystem to use for the container. Defaults to 'ext4'
