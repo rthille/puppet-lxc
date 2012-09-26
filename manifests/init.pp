@@ -39,11 +39,12 @@ define lxc::container(
 	$filesystem = 'ext4'
 	) {
 	
-	$manage = false
-	if !#host {
+	if !$host {
 		$manage = true
 	} elsif $host == $hostname {
 		$manage = true
+	} else {
+		$manage = false
 	}
 
 	if $manage {
